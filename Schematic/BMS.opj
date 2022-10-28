@@ -1,0 +1,171 @@
+(ExpressProject "BMS"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[10/26/22]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library1.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\bms.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (MPSSessionName "Administrator")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn")
+      (Path "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Select "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 76 0 460"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1158 26 480")
+        (Scroll "0 183")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\BMS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (PartMRUSelector
+    (GND
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VARISTOR
+      (FullPartName "VARISTOR.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Header1x8
+      (FullPartName "Header1x8.Normal")
+      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (CRYSTAL
+      (FullPartName "CRYSTAL.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (Header1x5
+      (FullPartName "Header1x5.Normal")
+      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (Header1x4
+      (FullPartName "Header1x4.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    ("SW SPST/SM"
+      (FullPartName "SW SPST/SM.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (FH3400C
+      (FullPartName "FH3400C.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (BSS123
+      (FullPartName "BSS123.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (XC6206-3.3V
+      (FullPartName "XC6206-3.3V.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (STM32F103CBT6
+      (FullPartName "STM32F103CBT6.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (DIODE
+      (FullPartName "DIODE.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("DIODE TVS"
+      (FullPartName "DIODE TVS.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (BSS84
+      (FullPartName "BSS84.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (IRF4905/TO
+      (FullPartName "IRF4905/TO.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (BSS84/SOT
+      (FullPartName "BSS84/SOT.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (FDD86380
+      (FullPartName "FDD86380.Normal")
+      (LibraryName "D:\WORK\GITHUB\BMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (IRF251
+      (FullPartName "IRF251.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("T POINT F"
+      (FullPartName "T POINT F.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\Cadence_SPB_17.4-2019\tools\capture\library"))
