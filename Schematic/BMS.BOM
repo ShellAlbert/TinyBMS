@@ -7,7 +7,7 @@ PRJ-22-BMS          Revision: A1
 
 
 
-Bill Of Materials       November 19,2022      22:36:40	Page1
+Bill Of Materials       November 20,2022      8:41:43	Page1
 
 Item	Quantity	Reference	Part	PCBFootprint
 ______________________________________________
@@ -51,7 +51,7 @@ ______________________________________________
 37	4	R44,R45,R46,R50	2K	R0402
 38	1	R47	1M	R0402
 39	7	R48,R59,R60,R63,R64,R107,R109	100K	R0402
-40	1	R55	100K	
+40	1	R55	100K	R0603
 41	2	R57,R77	100	R0402
 42	2	R61,R62	47K	R0402
 43	1	R71	365	R0402

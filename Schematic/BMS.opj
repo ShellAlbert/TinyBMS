@@ -1,12 +1,12 @@
 (ExpressProject "BMS"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/19/22]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/20/22]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
       (File ".\library1.olb"
         (Type "Schematic Library")))
-    ("Allegro Netlist Directory" "allegro")
+    ("Allegro Netlist Directory" "D:\Work\GitHub\TinyBMS\Schematic\Netlist")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
@@ -26,11 +26,61 @@
     (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
     (BOM_One_Part_Per_Line "FALSE")
     (Open_BOM_in_Excel "TRUE")
-    (BOM_View_Output "FALSE"))
+    (BOM_View_Output "FALSE")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "FALSE")
+    ("Allegro Netlist Output Board File" ".\allegro\bms.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "255")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Display_Online_DRC_Results "FALSE")
+    ("Allegro Backannotation Run Genfeed" "TRUE")
+    ("Allegro Backannotation Board File"
+       "D:\Work\GitHub\TinyBMS\PCB\TinyBMS-4.brd")
+    ("Allegro Backannotation Netlist Directory"
+       "D:\Work\GitHub\TinyBMS\Schematic\Netlist")
+    ("Allegro Backannotation Output File" "allegro\BMS.swp")
+    ("Allegro Backannotation Update Schematic" "TRUE")
+    ("Allegro Backannotation View Output" "FALSE")
+    ("Allegro Setup Output Warnings" "FALSE")
+    (Backannotation_TAB "0"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\bms.bom"
-      (Type "Report")))
+      (Type "Report"))
+    (File ".\netlist\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\netlist\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\netlist\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat"))
+    (File ".\netlist\pinview.dat"
+      (Type "Report")
+      (DisplayName "pinView.dat"))
+    (File ".\netlist\netview.dat"
+      (Type "Report")
+      (DisplayName "netView.dat"))
+    (File ".\netlist\funcview.dat"
+      (Type "Report")
+      (DisplayName "funcView.dat"))
+    (File ".\netlist\compview.dat"
+      (Type "Report")
+      (DisplayName "compView.dat"))
+    (File ".\allegro\bms.swp"
+      (Type "Report")
+      (DisplayName "BMS.swp")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
@@ -40,7 +90,10 @@
       (Sort User))
     (Folder "Include Files"
       (Sort User)))
-  (Folder "Logs")
+  (Folder "Logs"
+    (File ".\netlist\swp.log"
+      (Type "Log File")
+      (LogFile "D:\Work\GitHub\TinyBMS\Schematic\Netlist\swp.log")))
   (MPSSessionName "Administrator")
   (GlobalState
     (FileView
@@ -48,15 +101,42 @@
       (Path "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn")
       (Path "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn"
          "SCHEMATIC1")
+      (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources" "d:\work\github\tinybms\schematic\bms.dsn"))
+      (Path "Logs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 355 0 357"))
-      (Tab 0)))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 547"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1034 26 567")
+        (Scroll "326 340")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\BMS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (PartMRUSelector
+    (GND
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Header1x7
+      (FullPartName "Header1x7.Normal")
+      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (MFX04645
+      (FullPartName "MFX04645.Normal")
+      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (CRYSTAL-2P
+      (FullPartName "CRYSTAL-2P.Normal")
+      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
+      (DeviceIndex "0"))
     ("CAP POL"
       (FullPartName "CAP POL.Normal")
       (LibraryName
@@ -69,10 +149,6 @@
     (FDD86380
       (FullPartName "FDD86380.Normal")
       (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
-      (DeviceIndex "0"))
-    (GND
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (CRYSTAL
       (FullPartName "CRYSTAL.Normal")
@@ -154,20 +230,7 @@
       (FullPartName "INDUCTOR.Normal")
       (LibraryName
          "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (LM5007MM
-      (FullPartName "LM5007MM.Normal")
-      (LibraryName "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\LIBRARY1.OLB")
-      (DeviceIndex "0"))
-    (LED
-      (FullPartName "LED.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
-      (DeviceIndex "0"))
-    (VARISTOR
-      (FullPartName "VARISTOR.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE_SPB_17.4-2019\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
-     "C:\Cadence\Cadence_SPB_17.4-2019\tools\capture\library"))
+     "C:\Cadence\Cadence_SPB_17.4-2019\tools\capture\library")
+  (ISPCBBASICLICENSE "false"))

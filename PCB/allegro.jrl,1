@@ -1,0 +1,130 @@
+\t (00:00:02) allegro 17.4 S017 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Sun Nov 20 21:12:02 2022
+\t (00:00:02)         Host=THINKPAD1 User=Administrator Pid=13456 CPUs=8
+\t (00:00:02) CmdLine= C:\Cadence\Cadence_SPB_17.4-2019\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:05) Opening existing design...
+\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "TinyBMS-4"
+\d (00:00:05) Design opened: D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd
+\i (00:00:05) trapsize 2322
+\i (00:00:05) trapsize 2397
+\i (00:00:05) trapsize 1910
+\i (00:00:05) trapsize 1997
+\i (00:00:06) placementedit 
+\i (00:00:38) rename param 
+\i (00:00:38) placementedit 
+\i (00:00:41) setwindow form.rename
+\i (00:00:41) FORM rename more  
+\i (00:00:46) setwindow form.rename_more
+\i (00:00:46) FORM rename_more skip_characters  
+\i (00:00:47) FORM rename_more top_comp_des  
+\i (00:00:53) FORM rename_more bottom_comp_des  
+\i (00:00:53) FORM rename_more preserve_prefix YES 
+\i (00:00:57) FORM rename_more preserve_prefix NO 
+\i (00:00:58) FORM rename_more preserve_prefix YES 
+\i (00:01:08) FORM rename_more close  
+\i (00:01:09) setwindow form.rename
+\i (00:01:09) FORM rename rename  
+\i (00:01:09) setwindow pcb
+\i (00:01:09) rename execute 
+\i (00:01:09) placementedit 
+\i (00:01:11) setwindow form.rename
+\i (00:01:11) FORM rename close  
+\i (00:01:11) setwindow pcb
+\i (00:01:11) zoom out 1 
+\i (00:01:12) setwindow pcb
+\i (00:01:12) zoom out 86.3964 -28.4079
+\i (00:01:12) trapsize 3994
+\i (00:01:12) zoom in 1 
+\i (00:01:12) setwindow pcb
+\i (00:01:12) zoom in 86.9555 -7.4012
+\i (00:01:12) trapsize 1997
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 95.1026 -12.3932
+\i (00:01:14) trapsize 3994
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 95.7416 -12.4731
+\i (00:01:14) trapsize 7987
+\i (00:01:15) zoom in 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom in 40.3095 -10.7160
+\i (00:01:15) trapsize 3994
+\i (00:01:15) zoom in 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom in 40.3095 -10.7159
+\i (00:01:15) trapsize 1997
+\i (00:01:16) zoom out 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom out 37.3143 -11.1951
+\i (00:01:16) trapsize 3994
+\i (00:01:17) zoom in 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom in 95.1428 -9.1184
+\i (00:01:17) trapsize 1997
+\i (00:01:18) zoom in 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom in 95.1029 -9.1183
+\i (00:01:18) trapsize 998
+\i (00:01:19) zoom out 1 
+\i (00:01:19) setwindow pcb
+\i (00:01:19) zoom out 90.3904 -9.1183
+\i (00:01:19) trapsize 1997
+\i (00:01:20) zoom out 1 
+\i (00:01:20) setwindow pcb
+\i (00:01:20) zoom out 89.2722 -9.5177
+\i (00:01:20) trapsize 3994
+\i (00:01:21) zoom in 1 
+\i (00:01:21) setwindow pcb
+\i (00:01:21) zoom in 37.5939 -10.6359
+\i (00:01:21) trapsize 1997
+\i (00:01:22) zoom out 1 
+\i (00:01:22) setwindow pcb
+\i (00:01:22) zoom out 42.6260 -11.6743
+\i (00:01:22) trapsize 3994
+\i (00:01:23) save 
+\i (00:01:24) fillin yes 
+\i (00:01:24) placementedit 
+\i (00:01:25) zoom out 1 
+\i (00:01:25) setwindow pcb
+\i (00:01:25) zoom out 46.2202 -10.1566
+\i (00:01:25) trapsize 7987
+\i (00:01:25) zoom out 1 
+\i (00:01:25) setwindow pcb
+\i (00:01:25) zoom out 51.6515 -13.9906
+\i (00:01:25) trapsize 15975
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 134.0812 -15.2685
+\i (00:01:26) trapsize 7987
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 134.0812 -15.2684
+\i (00:01:26) trapsize 3994
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 134.6403 -15.5879
+\i (00:01:26) trapsize 1997
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 134.6403 -15.5878
+\i (00:01:26) trapsize 998
+\i (00:01:28) zoom out 1 
+\i (00:01:28) setwindow pcb
+\i (00:01:28) zoom out 140.5110 -14.7691
+\i (00:01:28) trapsize 1997
+\i (00:01:28) zoom out 1 
+\i (00:01:28) setwindow pcb
+\i (00:01:28) zoom out 140.5111 -14.9688
+\i (00:01:28) trapsize 3994
+\i (00:01:28) zoom out 1 
+\i (00:01:28) setwindow pcb
+\i (00:01:28) zoom out 141.6292 -16.5663
+\i (00:01:28) trapsize 7987
+\i (00:01:28) save 
+\i (00:01:29) fillin yes 
+\i (00:01:29) placementedit 
+\i (00:01:31) exit 
+\t (00:01:33)     Journal end - Sun Nov 20 21:13:33 2022
