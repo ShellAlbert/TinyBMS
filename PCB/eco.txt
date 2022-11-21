@@ -2,31 +2,78 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd                                    |
-|                                                    Sun Nov 20 20:02:47 2022  |
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd                                    |
+|                                                    Mon Nov 21 21:04:45 2022  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  GND          pins ADDED TO this existing net (pins not previously on any net)
+                                 C31.2                          
+                                 C32.2                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VDD168       pins ADDED TO this existing net (pins not previously on any net)
+                                 C31.1                          
+                                 C32.1                          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd                                    |
+|                                                    Mon Nov 21 21:04:45 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ CAP NP_C0402_0.1UF/35V
+ CAP NP_C0805_10UF/35V
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd                                    |
+|                                                    Mon Nov 21 21:04:45 2022  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C31                 CAP NP_C0805_10UF/35V 
+ C32                 CAP NP_C0805_10UF/35V 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd                                    |
+|                                                    Mon Nov 21 21:04:45 2022  |
 |------------------------------------------------------------------------------|
 | COMPONENTS CHANGED from one device type to another in design                 |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R17                 R_R0402_10K           96.6000 -32.800 R_R0603_10K
- R20                 R_R0402_10K           95.1000 -32.800 R_R0603_10K
+ C1                  CAP NP_C0402_0.1UF/35V 135.305 -13.600 CAP NP_C0402_0.1UF
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+|                                                                    Page   5  |
 |------------------------------------------------------------------------------|
-|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd                                    |
-|                                                    Sun Nov 20 20:02:47 2022  |
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd                                    |
+|                                                    Mon Nov 21 21:04:45 2022  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to design                                              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R17.2          96.6000 -32.800 PRIM_FILE      .\pstchip.dat
- R20.2          95.1000 -32.800 PRIM_FILE      .\pstchip.dat
+ C1.2           135.305 -13.600 PRIM_FILE      .\pstchip.dat
+ C31.2                          PRIM_FILE      .\pstchip.dat
+ C32.2                          PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
-|       Components changed    :       2                                        |
-|       Slot property added   :       2                                        |
+|       Nets changed          :       4                                        |
+|       Comp definitions added:       2                                        |
+|       Components added      :       2                                        |
+|       Components changed    :       1                                        |
+|       Slot property added   :       3                                        |
 |                                                                              |
-|   Total ECO changes reported:       4                                        |
+|   Total ECO changes reported:      12                                        |
 |------------------------------------------------------------------------------|

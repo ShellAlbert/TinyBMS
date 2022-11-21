@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : TinyBMS-4.brd                                 )
+(    Drawing          : TinyBMS-7.brd                                 )
 (    Software Version : 17.4S017                                      )
-(    Date/Time        : Sun Nov 20 20:02:47 2022                      )
+(    Date/Time        : Mon Nov 21 21:04:45 2022                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -19,10 +19,10 @@ Missing symbol has error:    No
 DRC update:                  Yes
 Schematic directory:         'D:/Work/GitHub/TinyBMS/Schematic/Netlist'
 Design Directory:            'D:/Work/GitHub/TinyBMS/PCB'
-Old design name:             'D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd'
-New design name:             'D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd'
+Old design name:             'D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd'
+New design name:             'D:/Work/GitHub/TinyBMS/PCB/TinyBMS-7.brd'
 
-CmdLine: netrev -$ -i D:/Work/GitHub/TinyBMS/Schematic/Netlist -y 1 -h -q netrev_constraint_report.xml D:/Work/GitHub/TinyBMS/PCB/#Taaabdj09852.tmp
+CmdLine: netrev -$ -i D:/Work/GitHub/TinyBMS/Schematic/Netlist -y 1 -h -q netrev_constraint_report.xml D:/Work/GitHub/TinyBMS/PCB/#Taaaawq12520.tmp
 
 ------ Preparing to read pst files ------
 
@@ -66,7 +66,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Nov 20 20:02:47 2022
+netrev run on Nov 21 21:04:45 2022
    DESIGN NAME : 'BMS'
    PACKAGING ON Apr 19 2021 16:22:31
 
@@ -91,6 +91,6 @@ netrev run on Nov 20 20:02:47 2022
  No oversight detected
  No warning detected
 
-cpu time      0:00:45
+cpu time      0:00:44
 elapsed time  0:00:00
 

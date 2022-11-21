@@ -1,6 +1,6 @@
 (ExpressProject "BMS"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/20/22]")
+  (SoftwareVersion "17.4-2019 S017 (3936576)  [4/19/2021]-[11/21/22]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -113,9 +113,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1034 26 567")
-        (Scroll "326 340")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 5 26 5 1034 26 567")
+        (Scroll "1084 2136")
+        (Zoom "344")
         (Occurrence "/"))
       (Path "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\BMS.DSN")
       (Schematic "SCHEMATIC1")

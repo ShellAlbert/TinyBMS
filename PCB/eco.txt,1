@@ -2,26 +2,20 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-4.brd                                    |
-|                                                    Sun Nov 20 19:29:20 2022  |
+|  D:/Work/GitHub/TinyBMS/PCB/TinyBMS-6.brd                                    |
+|                                                    Mon Nov 21 20:30:06 2022  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  CTL1         pins MOVED FROM this net (to net name listed on right)
-                                 U2.21           119.950 -38.600
-                                                                            REL
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CTL2         pins MOVED FROM this net (to net name listed on right)
-                                 U2.20           119.450 -38.600
-                                                                           CTL1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  REL          pins MOVED FROM this net (to net name listed on right)
-                                 U2.19           118.950 -38.600
-                                                                           CTL2
+  MCU_EN       pins DELETED FROM this net (pin now not on any net)
+                                 U3.2            114.700 -32.350
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 U3.41           119.450 -30.600
 |------------------------------------------------------------------------------|
-|       Nets changed          :       3                                        |
+|       Nets changed          :       2                                        |
 |                                                                              |
-|   Total ECO changes reported:       3                                        |
+|   Total ECO changes reported:       2                                        |
 |------------------------------------------------------------------------------|
