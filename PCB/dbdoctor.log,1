@@ -1,0 +1,15 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : TinyBMS-A1.brd                                )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Tue Nov 22 20:59:19 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+WARNING:   WARNING(SPMHDB-42): Run batch DRC to regenerate DRC errs.
+
+1 warnings, 0 errors detected, 0 errors could be fixed.

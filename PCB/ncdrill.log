@@ -1,0 +1,62 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : TinyBMS-A1.brd                                )
+(    Software Version : 17.4S017                                      )
+(    Date/Time        : Tue Nov 22 21:24:52 2022                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		3.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (mm)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		METRIC
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	NO
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		NO
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	NO
+ SCALE			1.000000
+
+ WARNING(SPMHMF-365): This design contains 20 slot holes that cannot be drilled.
+ WARNING(SPMHMF-366): They can be processed by NC routing instead.
+
+
+ Drill files being output to directory 'D:/Work/GitHub/TinyBMS/PCB' ...
+
+
+
+     'TinyBMS-A1-1-4.drl' created for holes connecting TOP and BOTTOM
+     ----------------------------------------------------------------
+
+           Num     Size      +/- Tolerance     Plating   Quantity
+
+            1.   0.2000    0.0000/  0.0000      PLATED         40
+            2.   0.3000    0.0000/  0.0000      PLATED        159
+            3.   0.4500    0.0000/  0.0000      PLATED          8
+            4.   0.7000    0.0000/  0.0000      PLATED          2
+            5.   1.0000    0.0000/  0.0000      PLATED         10
+            6.   1.5000    0.0000/  0.0000      PLATED          9
+            7.   3.0000    0.0000/  0.0000  NON_PLATED          2
+
+     ---- Total holes:                                        230
+
+     ---- Total head travel:              10.42 feet (3.18 meters)
+
