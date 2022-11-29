@@ -862,7 +862,7 @@ extern  sBMSConfig   gBMSConfig;<y:LabelModel><y:SmartNodeLabelModel distance="4
         <y:ShapeNode>
           <y:Geometry height="329.05500000000006" width="263.828125" x="2381.964735876568" y="785.8285568699114"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF00FF" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="283.322265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="242.44140625" x="10.693359375" xml:space="preserve" y="22.866367187499918">void  BQ769xx_Set_CellMap(void)
 {
 
@@ -1266,10 +1266,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n57">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.969932800000038" width="170.13841066666654" x="237.4975835310317" y="929.6656511897322"/>
+          <y:Geometry height="30.665651189732216" width="170.13841066666654" x="237.4975835310317" y="929.6656511897322"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="83.06920533333329" y="13.484966400000076">
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="83.06920533333329" y="13.332825594866108">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -1286,7 +1286,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="850.9454250000002" width="318.6249999999998" x="-871.5891739655749" y="1796.1017874999995"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="797.86328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="236.095703125" x="41.264648437499886" xml:space="preserve" y="26.54107187500017">void Systim_Time_Run(void)
 {
 		if(TaskTimePare.Tim10ms_count&gt;=10)
@@ -1350,10 +1350,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="208.28917500000023" width="462.0468749999998" x="-1495.6691958622996" y="1796.1017874999995"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="151.01171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="427.85546875" x="17.095703125" xml:space="preserve" y="28.63872812500017">void TIM1_UP_IRQHandler(void)// ´¥·¢ADCÖÐ¶Ï²ÉÑùºÍµç»ú»·Â·¿ØÖÆ  0.1MS
 {
-	  //´Ë³ÌÐò¸üÐÂÖÐ¶ÏÒ»Ö±Ö´ÐÐ
+	  //此程序更新中断一直执行
 		if(TIM_GetITStatus(TIM1, TIM_IT_Update)!=RESET)       
     {   
 				TIM_ClearFlag(TIM1, TIM_IT_Update); 
@@ -1370,7 +1370,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="30.969932800000038" width="170.13841066666654" x="262.0969270620634" y="960.3313023794644"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="83.06920533333329" y="13.484966400000076">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -1388,7 +1388,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="83.48917500000027" width="259.6468749999999" x="-456.32960266209966" y="1796.1017874999995"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="146.06640625" x="56.790234374999955" xml:space="preserve" y="10.34224375000008">void Sys_Rece_Data(void)
 {
 	Uart2Run_Pack();
@@ -1403,16 +1403,16 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="1271.5704250000003" width="834.2499999999994" x="-456.32960266209966" y="1927.6857103718703"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="1209.49609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="503.41796875" x="165.41601562499972" xml:space="preserve" y="31.037165624999943">void Uart2Run_Pack(void)
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="1224.197265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="503.41796875" x="165.41601562499972" xml:space="preserve" y="23.686579687499943">void Uart2Run_Pack(void)
 {   
-		unsigned char ia=0;
+unsigned char ia=0;
     if(RBDown2!=RBUp2)	         //Uart0 Function UartSD0
     {   ia=Uart2Recv[RBDown2++];		
         if(RBDown2&gt;= UARTNunD)
-				{
-						RBDown2=0;
-				}
+{
+        RBDown2=0;
+}
         switch(Uart2Stt)
         {
         case 0:	
@@ -1459,7 +1459,8 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
                 Uart2RecvBuf[Uart2CntR]=ia;	
                 Uart2CntR++;
 								Uart2ErrCountTime&amp;=~0x7fff;  //¼ÆÊ±ÇåÁã    
-                if(Uart2CntR&gt;=Uart2CntTT)	//Êý¾Ý¸öÊýÐ£Ñé
+                if(Uart2CntR&gt;=Uart2CntTT)	//数据个数校验
+
                 {			
 											Uart2Stt=0;
 											Uart2ErrCountTime=0;  //¼ÆÊ±Í£Ö¹ 
@@ -1507,10 +1508,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n64">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.969932800000038" width="170.13841066666654" x="237.4975835310317" y="990.6626047589289"/>
+          <y:Geometry height="30.331302379464432" width="170.13841066666654" x="237.4975835310317" y="991.3012351794645"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="83.06920533333329" y="13.484966400000076">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="83.06920533333329" y="13.165651189732216">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -1527,7 +1528,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="27.56206080000004" width="174.5948586666665" x="253.22622353103168" y="1021.3252095178577"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF00FF" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="85.29742933333324" y="11.781030399999963">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -1545,7 +1546,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="164.28917500000023" width="259.6468749999999" x="401.1414196758005" y="2028.1874978718697"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF00FF" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="106.908203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="144.7421875" x="57.45234375000001" xml:space="preserve" y="28.690485937499943">void Get_Base_Data(void)
 {
 		BQ769xx_GetData();
@@ -1635,7 +1636,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="1139.7344875000003" width="961.2031249999993" x="-519.8061651620997" y="3404.2310913827782"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#FF00FF" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="1003.6796875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="834.015625" x="63.59374999999966" xml:space="preserve" y="68.0274000000004">void BQ769xx_GetData(void) 
 {   
 		u8  rcd=0;
@@ -1900,7 +1901,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="571.5053208333334" width="479.32812499999966" x="602.9077977842182" y="3404.2310913827782"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="533.2421875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="420.37890625" x="29.474609374999773" xml:space="preserve" y="19.13156666666646">void  BQ769xx_Oper_Comm(void)
 {
     if((TaskTimePare.Tim100ms_flag==1)||(Bq769xx_Oper_EN==OPER_ON ) )
@@ -2030,7 +2031,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="883.2240708333334" width="894.5937499999999" x="2566.9063102939745" y="3344.453360018932"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="812.564453125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="782.107421875" x="56.2431640625" xml:space="preserve" y="35.32980885416646">static void batt_temp_full_cap(void)
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="812.564453125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="700.65625" x="96.96875" xml:space="preserve" y="35.32980885416646">static void batt_temp_full_cap(void)
 {
 		u8  ratio=0;
 		u8  updata_flag=0;
@@ -2081,7 +2082,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
 				temp_rate=1000+ratio*(gBMSData.BattPar.TempPackMin-250)/10;
 				temp_rate=rate_limit_max_min(temp_rate);
 			
-				gBMSData.PackCap.pack_real_cap=gBMSData.PackCap.pack_rated_cap*temp_rate/1000;      //µç³ØË¥¼õºóµÄÊµ¼ÊÈÝÁ¿  µ¥Î»   10mA/200ms 
+				gBMSData.PackCap.pack_real_cap=gBMSData.PackCap.pack_rated_cap*temp_rate/1000; /电池衰减后的实际容量  10mA/200ms 
 				gBMSData.PackCap.pack_rem_cap=gBMSData.PackCap.pack_real_cap*gBMSData.BattPar.SOCSys/1000;
 		}
 }
@@ -2232,10 +2233,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n84">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="28.350543436559065" width="274.37635891111165" x="-1448.9881816237735" y="1949.2722683172246"/>
+          <y:Geometry height="28.350543436559065" width="274.37635891111165" x="-1445.6026524138522" y="1952.6577975271457"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="258.462890625" x="7.956734143055883" xml:space="preserve" y="-0.07570484422058144">每1ms中断一次，计数器加1.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="269.5859375" x="2.3952107055558827" xml:space="preserve" y="-0.07570484422058144">每10ms中断一次，计数器加1.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -2322,7 +2323,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="82.13364963536435" width="318.6249999999998" x="-871.5891739655749" y="2690.8320035218726"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="203.751953125" x="57.436523437499886" xml:space="preserve" y="31.716238880182118">static u8 Uart2Recv[UARTNunD]={0};<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
@@ -2331,10 +2332,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n93">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="100.35191053606684" width="364.717098414375" x="-337.57171517031617" y="1993.2501980727677"/>
+          <y:Geometry height="103.17318487766772" width="364.717098414375" x="-337.57171517031617" y="1981.9651007063635"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="180.3585492071875" y="48.175955268033476">
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="180.3585492071875" y="49.586592438833804">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -2351,7 +2352,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="40.79012601397801" width="318.6249999999998" x="-871.5891739655749" y="2772.965653157237"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="164.0546875" x="77.28515624999989" xml:space="preserve" y="11.044477069488948">#define UARTNunD       0xFF <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
@@ -2362,23 +2363,22 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="286.65383404571696" width="705.1615297593723" x="-1678.8953642451047" y="2527.101945125498"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="253.919921875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="607.1171875" x="49.022171129686285" xml:space="preserve" y="16.36695608535865">void USART2_IRQHandler(void)                	             //串口2中断服务程序
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="239.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="607.1171875" x="49.022171129686285" xml:space="preserve" y="23.71754202285865">void USART2_IRQHandler(void)                	             //串口2中断服务程序
 {
-		if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)  //接收中断（接收到数据必须是0x0d 0x0a结束）
-		{
-				if(((RBDown2-RBUp2) &amp; UARTNunD)!=1)
-				{    Uart2Recv[RBUp2++]=USART_ReceiveData(USART2);
-						 if(RBUp2&gt;= UARTNunD)
-						 {
-								RBUp2=0;
-						 }
-				}
-			  else
-			  {
-					   Uart2Recv[RBUp2]=USART_ReceiveData(USART2);
-			  }	
-		} 
+if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)  //接收中断（接收到数据必须是0x0d 0x0a结束）
+{
+	if(((RBDown2-RBUp2) &amp; UARTNunD)!=1)
+	{    Uart2Recv[RBUp2++]=USART_ReceiveData(USART2);
+	     if(RBUp2&gt;= UARTNunD)
+	     {	RBUp2=0;
+	      }
+   	}
+	else
+	 {
+	   Uart2Recv[RBUp2]=USART_ReceiveData(USART2);
+	 }	
+	} 
 }<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
@@ -2387,10 +2387,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n96">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="41.22803440059738" width="341.47486446057417" x="-1456.9008968701369" y="2649.8148449480577"/>
+          <y:Geometry height="41.22803440059738" width="260.53250360003983" x="-1234.266338085772" y="2527.101945125498"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="302.916015625" x="19.27942441778714" xml:space="preserve" y="6.363040637798804">串口接收中断，将数据存入Buffer.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="257.359375" x="1.5865643000199725" xml:space="preserve" y="6.363040637798804">串口接收中断数据存入Buffer<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -2398,10 +2398,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n97">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="19.64393032566261" width="357.66413050150527" x="-317.4251801343266" y="2854.2367411916066"/>
+          <y:Geometry height="19.64393032566261" width="365.5636986579882" x="-317.4251801343266" y="2863.26481908473"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="176.83206525075263" y="7.821965162831475">
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="180.7818493289941" y="7.821965162831475">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -2418,7 +2418,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="330.0730058817013" width="394.8733017607526" x="-2176.5706294784454" y="2483.6827732895135"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="298.0234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="273.513671875" x="60.67981494287642" xml:space="preserve" y="16.024784190850824">u16 Rs485_Read_Data(u8* resp_buf,u8 size_buf )
 {
 		u8 rsp_val;
@@ -2448,7 +2448,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="416.11709641032905" width="348.54186839918407" x="-2597.2865083041024" y="2397.6386827608862"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="356.828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="292.17578125" x="28.18304357459192" xml:space="preserve" y="29.644485705164698">u16  Rs485_Rec_PCdata(u8* PCdtaBuff, u8 size_buf)
 {
     u8 typedata=0;
@@ -2500,7 +2500,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="44.36871297661639" width="218.18057048050127" x="-2176.5706294784454" y="2439.3140603128973"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="167.435546875" x="25.372511802750523" xml:space="preserve" y="12.833770550808367">#define RS485_BMS_ID  0x11<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
@@ -2511,7 +2511,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="87.74552464495594" width="237.1579255854001" x="-2597.2865083041024" y="2309.8931581159304"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="198.759765625" x="19.199079980200167" xml:space="preserve" y="12.470418572478138">#define RS485_FUN_COMM1  0x01
 #define RS485_FUN_COMM2  0x02
 #define RS485_FUN_COMM3  0x03
@@ -2525,7 +2525,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="135.40071324542635" width="450.01776800083576" x="-3313.0072917334137" y="1813.1072646502685"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="426.16796875" x="11.924899625417765" xml:space="preserve" y="6.895669122713116">void Send_GainOffset_Data(void)
 { 
 	 u8 DataBuff[3]={0};
@@ -2543,7 +2543,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="449.13070486519166" width="450.01776800083576" x="-3313.0072917334137" y="1948.5079778956947"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="415.6328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="429.501953125" x="10.257907437917765" xml:space="preserve" y="16.748946182595773">void Send_BMS_Data(void)
 {
 		u8 DataBuff[46]={0};
@@ -2581,7 +2581,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="323.49302806701155" width="450.01776800083576" x="-3313.0072917334137" y="2397.6386827608862"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="283.322265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="436.169921875" x="6.9239230629177655" xml:space="preserve" y="20.08538122100572">void Send_BQ769xxConfig_Data(void)
 {
 	  u8 DataBuff[12]={0};
@@ -2610,7 +2610,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="540.6716219493647" width="450.01776800083576" x="-3313.0072917334137" y="2721.1317108278977"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="518.541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="264.443359375" x="92.78720431291777" xml:space="preserve" y="11.065303162182317">u16 PcComm_Pro(u8* dtaBuff, u8 size)
 {   
 		u8 typecomm =0;
@@ -2727,7 +2727,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="486.8940653689725" width="698.2218752949532" x="-4211.574883137416" y="2234.2376454589253"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="445.03515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="587.013671875" x="55.60410170997693" xml:space="preserve" y="20.929454559486203">void Uart2Send(unsigned char STData,unsigned char FunCom,unsigned char LengByte,unsigned char* Data)
 {
     unsigned char i=0;
@@ -2767,7 +2767,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="66.99345633646237" width="279.37744423612935" x="-4211.574883137416" y="2167.244189122463"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="233.125" x="23.126222118065016" xml:space="preserve" y="16.79555629323113">#define  RS485_Rce_OFF     PBout(15)=1 
 #define  RS485_Rce_ON      PBout(15)=0 <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
@@ -2823,10 +2823,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n117">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.383831483512722" width="210.66666677323798" x="-229.7379102511198" y="3585.87795546534"/>
+          <y:Geometry height="26.41051553469265" width="306.58999438767387" x="-229.7379102511198" y="3584.5237437813716"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.02197265625" x="43.32234705849399" xml:space="preserve" y="4.003683319881475">每200ms执行一次<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="274.02197265625" x="16.284010865711934" xml:space="preserve" y="2.017025345471211">每200ms执行一次时间未到，直接返回。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -2837,7 +2837,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="87.31589679820877" width="287.2538498751499" x="-14.871710123833878" y="3702.914991702425"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="252.408203125" x="33.52822170158717" xml:space="preserve" y="4.905018711604953">一次读回40个字节的数据
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="252.408203125" x="33.52822170158717" xml:space="preserve" y="4.905018711604953">I2C一次读回40个字节的数据
 从VC1,VC2,VC3.... TS1,TS2,TS3,CC
 每个数据项占用2个字节
 用memcpy复制到结构体中！<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.05606677972640628" nodeRatioY="3.774758283725532E-15" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -2872,7 +2872,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="444.81780773529454" width="606.015638098039" x="602.9077977842182" y="4059.238737673164"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="371.529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="553.52734375" x="26.244147174019417" xml:space="preserve" y="36.644255430147496">u8 BQ769xx_DSGSET(u8 ONOFF)
 {
     u8 ret=gRET_OK; 
@@ -2908,7 +2908,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="444.81780773529454" width="606.015638098039" x="1263.5283394869632" y="4059.238737673164"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#0000FF" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="400.931640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="556.19921875" x="24.908209674019417" xml:space="preserve" y="21.943083555147496">u8 BQ769xx_CHGSET(u8 ONOFF)
 {
     u8 ret=gRET_OK; 
@@ -2954,10 +2954,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n124">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="29.521803714628504" width="228.48967873136633" x="-3091.4792024639446" y="2751.1317108278977"/>
+          <y:Geometry height="29.521803714628504" width="220.54497018541804" x="-3091.4792024639446" y="2751.1317108278977"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.0234375" x="8.23312061568322" xml:space="preserve" y="2.9601206073143658">接收到的PC指令处理Process<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.0234375" x="4.260766342708848" xml:space="preserve" y="2.9601206073143658">接收到的PC指令处理Process<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3034,7 +3034,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="23.836301373630477" width="113.83204818790489" x="-2433.9602341330533" y="2499.5796851009995"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.6875" x="13.572274093952274" xml:space="preserve" y="0.11736943681535195">bit[2]功能码<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.6875" x="5.572274093952274" xml:space="preserve" y="0.11736943681535195">bit[2]功能指令<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3054,10 +3054,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n133">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="80.60248880953372" width="218.12548175558857" x="-3454.060566681569" y="2810.653514542526"/>
+          <y:Geometry height="80.60248880953372" width="238.08330031538014" x="-3551.090592048794" y="2810.6535145425255"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.0" x="3.0627408777941127" xml:space="preserve" y="18.69968190476675">这个函数光设置了两个变量
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.0" x="13.041650157690128" xml:space="preserve" y="18.69968190476675">这个函数光设置了两个变量
 并没有执行写寄存器的操作！<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
@@ -3068,7 +3068,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
         <y:ShapeNode>
           <y:Geometry height="193.23824386269428" width="238.08330031538048" x="-3551.090592048794" y="2891.2560033520595"/>
           <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="2.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="165.712890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="151.046875" x="43.51821265769013" xml:space="preserve" y="13.762676618847308">typedef enum 
 {
 	COMM_MIN=0,
@@ -3208,10 +3208,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n146">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="32.48895404437485" width="266.25188940518876" x="836.0697429866281" y="4306.184664394216"/>
-          <y:Fill color="#FFCC99" transparent="false"/>
-          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="206.78125" x="29.73531970259444" xml:space="preserve" y="4.443695772187311">bit[1]=1, ON. (0x1&lt;&lt;2) = 0x2<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="26.84640536117263" width="266.25188940518876" x="907.1658563949748" y="4311.8272130774185"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="206.78125" x="29.73531970259444" xml:space="preserve" y="1.6224214305866553">bit[1]=1, ON. (0x1&lt;&lt;2) = 0x2<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3219,10 +3219,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n147">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="32.48895404437485" width="266.25188940518876" x="836.0697429866281" y="4368.673618438591"/>
-          <y:Fill color="#FFCC99" transparent="false"/>
-          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="246.8046875" x="9.723600952594438" xml:space="preserve" y="4.443695772187311">bit[1]=0, OFF. 0x1111,1101=0xFD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="26.84640536117263" width="266.25188940518876" x="907.1658563949748" y="4374.316167121793"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="246.8046875" x="9.723600952594438" xml:space="preserve" y="1.6224214305866553">bit[1]=0, OFF. 0x1111,1101=0xFD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3274,10 +3274,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n152">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="32.48895404437485" width="266.25188940518876" x="1550.1794706025653" y="4318.250334238308"/>
-          <y:Fill color="#FFCC99" transparent="false"/>
-          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="214.7734375" x="25.739225952594325" xml:space="preserve" y="4.443695772187311">bit[0]=1, OFF. (0x1&lt;&lt;1) = 0x1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="25.266491729876407" width="266.25188940518876" x="1550.1794706025653" y="4325.472796552806"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="214.7734375" x="25.739225952594325" xml:space="preserve" y="0.8324646149385444">bit[0]=1, OFF. (0x1&lt;&lt;1) = 0x1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3285,10 +3285,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n153">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="32.48895404437485" width="266.25188940518876" x="1550.1794706025653" y="4385.365545892239"/>
-          <y:Fill color="#FFCC99" transparent="false"/>
-          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="245.921875" x="10.165007202594325" xml:space="preserve" y="4.443695772187311">bit[1]=0, OFF. 0x1111,1110=0xFE<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="25.266491729876407" width="266.25188940518876" x="1550.1794706025653" y="4390.330988733457"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="245.921875" x="10.165007202594325" xml:space="preserve" y="0.8324646149385444">bit[1]=0, OFF. 0x1111,1110=0xFE<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3412,10 +3412,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n162">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="21.75460717660542" width="128.16963336441847" x="2491.8841305094284" y="877.6643925943797"/>
+          <y:Geometry height="21.75460717660542" width="150.19814342363986" x="2491.8841305094284" y="877.6643925943797"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.8984375" x="25.635597932209294" xml:space="preserve" y="-0.923477661697234">5串电池组<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.8515625" x="6.173290461819761" xml:space="preserve" y="-0.923477661697234">5节电池1F=1,1111<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3426,7 +3426,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="21.75460717660542" width="128.16963336441847" x="2491.8841305094284" y="1010.931954082474"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.8984375" x="25.635597932209294" xml:space="preserve" y="-0.923477661697234">5串电池组<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.296875" x="8.936379182209294" xml:space="preserve" y="-0.923477661697234">5串,1F=1,1111<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3434,10 +3434,10 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
     <node id="n164">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="21.75460717660542" width="128.16963336441847" x="2491.8841305094284" y="919.5173405481422"/>
+          <y:Geometry height="21.75460717660542" width="150.19814342363986" x="2491.8841305094284" y="919.5173405481421"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.8984375" x="25.635597932209294" xml:space="preserve" y="-0.9234776616973477">4串电池组<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.9765625" x="6.610790461819761" xml:space="preserve" y="-0.923477661697234">4串电池17=1,0111<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3448,7 +3448,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="21.75460717660542" width="128.16963336441847" x="2491.8841305094284" y="965.2246473153082"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.8984375" x="25.635597932209294" xml:space="preserve" y="-0.923477661697234">3串电池组<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.421875" x="9.373879182209294" xml:space="preserve" y="-0.923477661697234">3串,13=1,0011<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3514,7 +3514,7 @@ extern  sBMSData  gBMSData;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/>
           <y:Geometry height="29.157605016446723" width="263.8281249999999" x="2381.964735876568" y="756.6709518534645"/>
           <y:Fill color="#FFCC99" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="180.0" x="41.9140625" xml:space="preserve" y="2.7780212582233617">设置这个参数有什么用？<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="247.59375" x="8.1171875" xml:space="preserve" y="2.7780212582233617">用bit来表示电池数，1bit表示1节。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -3757,6 +3757,1234 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
           <y:Fill color="#FF99CC" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="332.2265625" x="24.92825041002584" xml:space="preserve" y="3.8985184369555554">1小时=60分=60*60秒，5小时=5*60*60=18000<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n189">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="28.269245275665753" width="259.6468749999999" x="190.0" y="1202.5712830100715"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.8984375" x="59.374218749999955" xml:space="preserve" y="2.333841387832763">所有定时标志位清0<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n190">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.556047910615803" width="88.49835306019315" x="1247.2572422167234" y="1413.6741501287536"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="36.0" x="26.24917653009652" xml:space="preserve" y="-0.12236666969215548">额定容量<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n191">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.556047910615803" width="88.49835306019315" x="1247.2572422167232" y="1442.5839633744026"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="36.0" x="26.24917653009652" xml:space="preserve" y="-0.12236666969215548">实际容量<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n192">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.556047910615803" width="88.49835306019315" x="1247.2572422167232" y="1475.2894915968786"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.125" x="10.68667653009652" xml:space="preserve" y="-0.12236666969215548">remaing 剩余容量<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n193">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="41.543089379298294" width="230.23917598223" x="1485.238569790166" y="1479.40884919949"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="210.234375" x="10.00240049111494" xml:space="preserve" y="4.07037281464909">5AH就是以5A的电流放电，可以持续1小时。
+这里有两个参数，一是放电电流5A，另一个是时间1小时。
+将这2个参数切片为，10mA和200mS。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n194">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.111987613813767" width="168.84824630899118" x="1330.3387485410426" y="1363.151322839546"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="147.14453125" x="10.851857529495646" xml:space="preserve" y="0.7552125569068266">应该是100，为避免小数，放大1000倍。
+保留小数点后1位，100.0<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n195">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.556047910615803" width="101.49878522629126" x="2317.3926676258225" y="3589.1301170508177"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.24609375" x="13.626345738145574" xml:space="preserve" y="-0.12236666969192811">200mS计5次就是1s<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n196">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.556047910615803" width="83.70263808336642" x="2293.5016016619984" y="3745.555581124983"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.44921875" x="15.626709666683382" xml:space="preserve" y="-0.12236666969192811">1s执行一次！<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n197">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="49.56961488115405" width="430.5792776164923" x="2871.3424527306724" y="3467.968750694226"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="404.0" x="13.289638808246309" xml:space="preserve" y="10.53383087807697">这应该是根据电池组的温度，定义一个比例。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n198">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="21.41047567763337" width="195.9216462948899" x="2764.8936806601478" y="3842.574197511085"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="180.8984375" x="7.5116043974448985" xml:space="preserve" y="3.804847213816629">如果电池温度比上一次记录的值大10度，就更新。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n199">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="21.41047567763337" width="195.9216462948899" x="2764.8936806601478" y="3958.9934288217237"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="180.8984375" x="7.5116043974448985" xml:space="preserve" y="3.804847213816629">如果电池温度比上一次记录的值大10度，就更新。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n200">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="21.41047567763337" width="195.9216462948899" x="2764.8936806601478" y="3900.7838131664043"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.8984375" x="39.5116043974449" xml:space="preserve" y="3.804847213816629">这是正负10度的判断呀！！！！<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n201">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="24.378189163584693" width="239.07657434899932" x="-1476.1685476131531" y="1800.0741417729741"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="228.462890625" x="5.306841861999601" xml:space="preserve" y="-2.061881980707767">定时器1中断服务函数ISR<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n202">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="23.385100595341328" width="318.6249999999998" x="-871.5891739655749" y="1796.1017874999998"/>
+          <y:Fill color="#FFFF99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="270.091796875" x="24.266601562499886" xml:space="preserve" y="2.34196436017055">时间驱动：10ms,100ms,200ms,500ms,1s,10s,1m<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n203">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.665651189732216" width="210.4902555910228" x="407.6359941976982" y="929.6656511897322"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="181.919921875" x="14.285166858011394" xml:space="preserve" y="1.081849032366108">产生时间间隔标志位
+10ms,100ms,200ms,500ms,1s,10s,1m<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n204">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.665651189732216" width="210.4902555910228" x="432.23533772873" y="960.6595583281255"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.8125" x="56.838877795511394" xml:space="preserve" y="7.207337313616108">接收并解析串口协议<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n205">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="187.46840797380457" width="366.82902082518353" x="-1679.22401572132" y="2339.6335371516934"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="165.712890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="301.076171875" x="32.87642447509188" xml:space="preserve" y="10.87775867440223">static u16 Uart1ErrCountTime;
+static u8 Uart2Recv[UARTNunD]={0};
+static u8 Uart2RecvBuf[UARTNunD]={0};
+static u8 RBUp2=0;
+static u8 RBDown2=0;
+static u8 Uart2ACC=0;
+static u8 Uart2CntR=0;
+static u8 Uart2CntTT=0;
+static u8 Uart2Stt=0;
+static u8 Uart2_State=0;
+static u16  Uart2ErrCountTime=0; //通信数据丢失时计时
+<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n206">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="98.53516946436935" width="328.9630298611505" x="-1302.6968643468829" y="2339.6335371516934"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="287.388671875" x="20.78717899307526" xml:space="preserve" y="10.514655044684787">RBDown2指向缓冲区的开始[0], 
+RBUp2指向缓冲区的最后[x], 
+UARTNunD是缓冲区的大小。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n207">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.327106330458378" width="204.77999632362196" x="-1543.120729128037" y="2658.348446429704"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="180.8984375" x="11.940779411811036" xml:space="preserve" y="3.263162540229132">前指针到达最大值了，赋零。从头开始。[0] .... [x] <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n208">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.327106330458378" width="154.67416401678713" x="-1303.7274160837064" y="2623.2087709754815"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.7890625" x="8.442550758393509" xml:space="preserve" y="3.263162540229132">读取串口数据，存入Uart2Recv数组。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n209">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.327106330458378" width="154.67416401678713" x="-1320.0686287060284" y="2726.002586344992"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.7890625" x="8.442550758393509" xml:space="preserve" y="3.263162540229132">读取串口数据，存入Uart2Recv数组。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n210">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="26.533909881981003" width="328.9630298611505" x="-1302.6968643468829" y="2438.168706616063"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="264.70703125" x="32.12799930557526" xml:space="preserve" y="3.916369003490672">RBUp2相当于写指针，RBDown2相当于读指针。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n211">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="47.69346744398911" width="252.08330405252173" x="27.14538324405885" y="1981.9651007063635"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="216.68359375" x="17.699855151260863" xml:space="preserve" y="7.145561846994497">RBDown2读指针
+从Uart2Recv接收缓冲区中读取一个字节<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n212">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.201566526062493" width="186.3588969905836" x="-176.76059773831543" y="2045.5074956902358"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="190.673828125" x="-2.15746556720822" xml:space="preserve" y="5.75019732553119">读指针到达最大值，从0重新开始。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n213">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="19.51232230060407" width="186.3588969905836" x="-159.21351374652474" y="2085.138285584031"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="178.0234375" x="4.167729745291808" xml:space="preserve" y="0.4055752128019776">Uart2Stt状态机变量，初始值为0.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n214">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-165.85374226689743" y="2146.168063318565"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.0" x="6.689971656169263" xml:space="preserve" y="-0.881898862840444">状态机进入下一状态<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n215">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.770374479798761" width="141.6705704693091" x="-4.191824335649031" y="2189.3789663238613"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0" x="12.835285234654549" xml:space="preserve" y="-0.01520338510044894">有效数据暂存到另外一个缓冲区<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n216">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-16.468867654188614" y="2131.0074773019746"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.0" x="10.689971656169263" xml:space="preserve" y="-0.881898862840444">判断读到帧头字节<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n217">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.770374479798761" width="150.48774968514596" x="-121.84486475866615" y="2280.427656416254"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.671875" x="9.907937342572978" xml:space="preserve" y="-0.01520338510044894">不是期望的帧头字节，所有变量清0.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n218">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.50696602163839" width="115.78580076008376" x="-388.2555189855262" y="2116.9242775825196"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.0078125" x="14.888994130041908" xml:space="preserve" y="3.402897073319309">状态0:起始字符<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n219">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.50696602163839" width="115.78580076008376" x="-388.2555189855262" y="2364.318590980722"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.0078125" x="14.888994130041908" xml:space="preserve" y="3.402897073319309">状态1:从机地址<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n220">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.50696602163839" width="115.78580076008376" x="-388.2555189855261" y="2469.0842674209302"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.0078125" x="14.888994130041851" xml:space="preserve" y="3.402897073319309">状态2:功能指令<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n221">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.50696602163839" width="115.78580076008376" x="-388.2555189855261" y="2557.6720347420905"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.0078125" x="14.888994130041851" xml:space="preserve" y="3.402897073319309">状态3:数据长度<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n222">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.50696602163839" width="115.78580076008376" x="-388.2555189855261" y="2676.9072676423357"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="91.33984375" x="12.222978505041851" xml:space="preserve" y="3.402897073319309">状态4: CRC校验<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n223">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-168.5620083012658" y="2382.5104146243516"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.0" x="6.689971656169263" xml:space="preserve" y="-0.881898862840444">状态机进入下一状态<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n224">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="107.40720924932728" x="-147.28415489568283" y="2397.5317578896843"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.33203125" x="-0.962411000336374" xml:space="preserve" y="-0.881898862840444">累加，用于计算CRC校验和。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n225">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.770374479798761" width="141.6705704693091" x="-69.6789123893915" y="2412.553101155017"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0" x="12.835285234654549" xml:space="preserve" y="-0.01520338510044894">有效数据暂存到另外一个缓冲区<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n226">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-151.21317439477014" y="2426.3234756348156"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.44921875" x="4.465362281169263" xml:space="preserve" y="-0.881898862840444">接收到的有效个数加1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n227">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-162.30687650984012" y="2484.7213229503127"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.0" x="6.689971656169263" xml:space="preserve" y="-0.881898862840444">状态机进入下一状态<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n228">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="107.40720924932728" x="-149.75148395228535" y="2500.1793654483477"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.33203125" x="-0.9624110003363597" xml:space="preserve" y="-0.881898862840444">累加，用于计算CRC校验和。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n229">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.770374479798761" width="141.6705704693091" x="-70.82092669910622" y="2515.6374079463826"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0" x="12.835285234654549" xml:space="preserve" y="-0.01520338510044894">有效数据暂存到另外一个缓冲区<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n230">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-153.9116222454366" y="2529.4077824261813"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.44921875" x="4.465362281169263" xml:space="preserve" y="-0.881898862840444">接收到的有效个数加1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n231">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-222.60655872697313" y="2587.0400299689104"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.0" x="6.689971656169263" xml:space="preserve" y="-0.881898862840444">状态机进入下一状态<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n232">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="107.40720924932728" x="-148.0593397738663" y="2601.640321784063"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.33203125" x="-0.9624110003363597" xml:space="preserve" y="-0.881898862840444">累加，用于计算CRC校验和。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n233">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="13.770374479798761" width="141.6705704693091" x="-69.40705461351234" y="2616.2406135992155"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0" x="12.835285234654549" xml:space="preserve" y="-0.01520338510044894">有效数据暂存到另外一个缓冲区<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n234">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-151.27681840935082" y="2646.3526097765853"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.44921875" x="4.465362281169263" xml:space="preserve" y="-0.881898862840444">接收到的有效个数加1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n235">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="89.37994331233853" x="-151.27681840935082" y="2734.5294969652796"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.44921875" x="4.465362281169263" xml:space="preserve" y="-0.881898862840444">接收到的有效个数加1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n236">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.94825789817844" width="109.89173628551484" x="-179.33330246150175" y="2776.8210346121928"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.0" x="12.945868142757405" xml:space="preserve" y="1.5737383240893905">已经接到到所有的数据<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n237">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="12.036983524319226" width="104.90823728851072" x="-222.24980508899142" y="2808.385056839624"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="100.8984375" x="2.0048998942553453" xml:space="preserve" y="-0.881898862840444">状态机清0，从0重新开始。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n238">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.94825789817844" width="163.8435297748201" x="-115.70501125115848" y="2837.659098605048"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.44921875" x="13.697155512410049" xml:space="preserve" y="1.5737383240893905">CRC校验和一定是0吗？这里很奇怪!!!<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n239">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="79.07405795002853" width="81.27589074569403" x="-1947.333941877499" y="2585.077830350363"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.60546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="48.44921875" x="16.41333599784707" xml:space="preserve" y="3.2342946000144366">解析数据
+[0] 同步帧头
+[1] 设备地址
+[2] 功能指令
+[3] 数据长度
+[4~n-1] 数据
+[n] CRC校验<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n240">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="116.37705759415837" x="-2102.5077912325305" y="2608.546670264221"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="100.89453125" x="7.741263172079016" xml:space="preserve" y="-1.1280945469861763">判断[1]是不是本设备的地址
+<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n241">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="72.17558822942635" x="-2176.5706294784454" y="2439.3140603128973"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.0" x="10.087794114713233" xml:space="preserve" y="-1.1280945469861763">本机设备地址
+<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n242">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="45.271520765928585" width="152.48936916665184" x="-3313.0072917334137" y="1767.8357438843398"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#993366" raised="false" type="line" width="3.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.40625" x="9.041559583326034" xml:space="preserve" y="5.934588507964236">u32 VoltCellGainUV = 0;
+u8  VoltCellOffSet=0;<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n243">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="152.48936916665195" x="-3142.1229819669466" y="1851.5990761225862"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="133.80859375" x="9.340387708326034" xml:space="preserve" y="-1.1280945469861763">电流ADC增益是32bit的，只取16bits.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n244">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="40.33897434711605" x="-3029.9725871474106" y="1869.242298975194"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.44921875" x="7.944877798558082" xml:space="preserve" y="-1.1280945469861763">高8位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n245">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="40.33897434711605" x="-3070.311561494527" y="1883.9286582471902"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.44921875" x="7.944877798558082" xml:space="preserve" y="-1.1280945469861763">低8位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n246">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="93.2651781877629" x="-3123.2377653351737" y="1898.7099452183488"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.890625" x="20.187276593881506" xml:space="preserve" y="-1.1280945469861763">电流ADC偏置<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n247">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="25.08670899571291" width="211.0815946930228" x="-3170.0612769310596" y="2036.0680130948176"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.9306640625" x="-0.9245346847387736" xml:space="preserve" y="4.417866216606399">15串电池的电压，16bits拆分成高8位和低8位。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n248">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="40.33897434711605" x="-2969.606530355886" y="2073.258224667797"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.44921875" x="7.944877798558082" xml:space="preserve" y="-1.1280945469861763">高8位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n249">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="11.544592156027761" width="40.33897434711605" x="-2989.926736038075" y="2088.3151895021083"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="24.44921875" x="7.944877798558082" xml:space="preserve" y="-1.1280945469861763">低8位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n250">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="278.4536259704563" x="-3306.0637010700198" y="2114.965940627383"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="137.2268129852282" y="12.68752299747348">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n251">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="105.85387989787193" x="-3027.6100750995633" y="2114.8028168238247"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.123046875" x="0.36541651143579656" xml:space="preserve" y="6.562034716223479">电池包总电压，16位。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n252">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="88.62180716856903" width="302.1523304399051" x="-3306.0637010700198" y="2144.3409866223296"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="149.0761652199526" y="42.31090358428446">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n253">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="105.85387989787193" x="-3003.9113706301146" y="2173.9643672091406"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.01953125" x="8.417174323935797" xml:space="preserve" y="6.562034716223479">TS1/2/3三组温度值<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n254">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="278.4536259704563" x="-3306.0637010700198" y="2232.9627937908986"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="137.2268129852282" y="12.68752299747348">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n255">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="105.85387989787193" x="-3027.6100750995633" y="2232.9627937908986"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.123046875" x="0.36541651143579656" xml:space="preserve" y="6.562034716223479">电池包总电流，16位。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n256">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="278.4536259704563" x="-3306.0637010700198" y="2262.337839785845"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="137.2268129852282" y="12.68752299747348">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n257">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="22.15258368044772" width="164.62055136698507" x="-3027.6100750995633" y="2269.560302100344"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.16015625" x="7.730197558492364" xml:space="preserve" y="4.175901215223803">电池包剩余电量,避免小数*10,99.9%=999<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n258">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="58.039193305613594" width="325.85103490935387" x="-3306.0637010700198" y="2292.337839785845"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="160.925517454677" y="27.01959665280674">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n259">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="29.375045994946618" width="95.68465295905742" x="-2980.212666160666" y="2307.572721230491"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="16.2509765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.0" x="5.842326479528765" xml:space="preserve" y="6.562034716223479">均衡开关开启状态
+<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n260">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="128.68390281930408" width="128.41143532162948" x="-3027.2782357932497" y="2482.612506266708"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="3.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.0" x="8.205717660814571" xml:space="preserve" y="47.64077953465221">将这几个寄存器的值
+一并打包串口上传。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n261">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="26.41051553469265" width="183.71160436430125" x="-3968.081434371425" y="2617.201192279539"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="167.6328125" x="8.039395932150455" xml:space="preserve" y="1.404476517346211">Tx one Byte each time.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n262">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="26.41051553469265" width="119.92823404938474" x="-318.2654665211405" y="3372.3658430751766"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="85.796875" x="17.06567952469237" xml:space="preserve" y="1.404476517346211">共15节电池<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n263">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="26.41051553469265" width="119.92823404938474" x="-316.00393556440184" y="3335.0458619946658"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.8984375" x="13.51489827469237" xml:space="preserve" y="1.404476517346211">芯片I2C地址<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n264">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.778510225114246" width="130.21529538873804" x="-262.36632061716807" y="3767.8095196033514"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.8984375" x="6.658428944369007" xml:space="preserve" y="3.4888644875572936">依次循环处理这15节电池的数据<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n265">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="17.116068515587926" width="266.2548418336311" x="-459.08521310489743" y="3533.0243776454026"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="131.12742091681554" y="6.558034257794134">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n266">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.778510225114246" width="130.21529538873804" x="-192.83037127126636" y="3531.19315679064"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.0" x="19.107647694369007" xml:space="preserve" y="3.4888644875572936">这个数据有什么用？？？<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n267">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.778510225114246" width="223.2044976879088" x="-343.26396037319194" y="3793.619039206703"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.8984375" x="5.153030093954385" xml:space="preserve" y="3.4888644875572936">如果该位为1则表示该位接有电池，为0则表示为空，跳过。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n268">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.778510225114246" width="279.51713354626577" x="-268.32489622886146" y="3822.668748012793"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="245.4453125" x="17.035910523132884" xml:space="preserve" y="3.4888644875572936">The MSB is symbol bit, 1 represents negative, 0 represents positive.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n269">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="162.71637580398217" x="-212.40573151575956" y="3854.723001141715"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="147.4296875" x="7.643344151991073" xml:space="preserve" y="1.524354738013244">0x100=256, convert negative to positive.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n270">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="116.49261699119052" x="-252.7164316513197" y="3928.74621901164"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.50390625" x="5.994355370595258" xml:space="preserve" y="1.524354738013244">positive value, keep original.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n271">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="267.51990012597344" x="-156.79310403688385" y="3891.734610076677"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="212.03515625" x="27.742371937986718" xml:space="preserve" y="1.524354738013244">单节电池电压计算= [(高8位+低8位)*增益倍数]/1000-偏置值<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n272">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="137.87670158072186" x="204.44781290964994" y="3891.734610076677"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.58203125" x="19.14733516536093" xml:space="preserve" y="1.524354738013244">除以1000是将uV转换为mV<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n273">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="191.32292270801221" x="177.72470234600476" y="3908.5841008027037"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="182.69140625" x="4.315758229006121" xml:space="preserve" y="1.524354738013244">数据手册中标明Gain的单位是uV, Offset单位是mV.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n274">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="87.60276773319572" x="-417.1708749324355" y="3972.8988915249997"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="72.4765625" x="7.56310261659786" xml:space="preserve" y="1.524354738013244">Next Single Battery<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n275">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.460721883275824" width="130.93754162018786" x="-308.14478119770695" y="4002.7694368815646"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.34765625" x="12.794942685093929" xml:space="preserve" y="3.3299703166380823">右移1位，1位表示1节电池！<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n276">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="113.59044290107374" width="412.9407514313135" x="2645.792860876568" y="785.8285568699114"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="82.40625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="366.6953125" x="23.1227194656567" xml:space="preserve" y="15.592096450536928">为什么要这么搞呢？
+因为不同的电池配置模式不一样，
+支持5节的芯片，只接3节电池时，
+有2个引脚是空的，这样用00就能标明出哪节空了。<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n277">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="267.51990012597344" x="-156.79310403688385" y="3908.5841008027037"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="208.2890625" x="29.615418812986718" xml:space="preserve" y="1.524354738013244">*256就是左右8位，&lt;&lt;8, 2^8=256，高8位+低8位拼成16位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n278">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="267.51990012597344" x="-135.53599215200916" y="4044.432638053325"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="208.2890625" x="29.615418812986718" xml:space="preserve" y="1.524354738013244">*256就是左右8位，&lt;&lt;8, 2^8=256，高8位+低8位拼成16位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n279">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="294.6041338053436" x="-135.53599215200916" y="4080.4038859087386"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="217.390625" x="38.60675440267181" xml:space="preserve" y="1.524354738013244">电池包总电压=(高8位+低8位)*LSB, 手册里写LSB为1.532mV<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n280">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="23.70209216675562" width="262.80381660602546" x="152.5899171453344" y="4037.5800366125954"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="237.45947265625" x="12.672171974887732" xml:space="preserve" y="0.662813661502696">#define BATVOLTLSB            1532<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n281">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="442.66461125256694" x="-135.53599215200916" y="4116.375133764152"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle color="#FF0000" raised="false" type="line" width="2.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="387.23046875" x="27.71707125128347" xml:space="preserve" y="1.524354738013244">16bits温度值，*256就是左移8位，将高8位与低8位拼成16 bits,一个LSB是382uV,除以1000是将uV转换为mV.<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n282">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="17.116068515587926" width="167.3071081249989" x="-272.5319977002903" y="4152.346381619566"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="81.65355406249944" y="6.558034257794134">
+            <y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n283">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="928.4031298628665" width="534.3281249999997" x="-1220.06218994334" y="4135.684328882779"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="871.369140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="421.697265625" x="56.31542968749977" xml:space="preserve" y="28.516994618933495">signed int TemChange(unsigned int uiADCV)
+{	
+	unsigned char ucA=32,TemNK=0;
+	signed int uiD=0;
+	TemNK=TemNA;
+	if(uiADCV&lt;TemD[TemNK])			//
+	{	while(--ucA)
+		{	if(TemNK&lt;30)
+			{	TemNK++;
+				if(uiADCV&gt;=TemD[TemNK])
+				{	uiD=-200+TemNK*(int)40;
+					uiD=uiD-((int)40)*(uiADCV-TemD[TemNK])/(TemD[TemNK-1]-TemD[TemNK]);
+					break;
+				}
+			}
+			else 
+			{	uiD=1000;		//100?
+				break;
+			}
+		}
+	}
+	else if(uiADCV&gt;=TemD[TemNK-1])			
+	{	while(--ucA)
+		{	if(TemNK&gt;1)
+			{	TemNK--;
+				if(uiADCV&lt;TemD[TemNK-1])
+				{	uiD=-200+TemNK*(int)40;
+					uiD=uiD-((int)40)*(uiADCV-TemD[TemNK])/(TemD[TemNK-1]-TemD[TemNK]);
+					break;
+				}
+			}
+			else 
+			{	uiD=-200;		//-30?
+				break;
+			}
+		}
+	}
+	else
+	{	uiD=-200+TemNK*(int)40;
+		uiD=uiD-((int)40)*(uiADCV-TemD[TemNK])/(TemD[TemNK-1]-TemD[TemNK]);
+	}
+	TemNA=TemNK;
+	
+	if(uiD&amp;0x8000) 
+	{   
+		 uiD&amp;=~0x8000;
+		 uiD=0x8000-uiD;
+		 uiD=uiD*90/100;
+		 uiD&amp;=0x7fff;
+		 //uiD=0x8000-uiD;
+		 uiD|=0x8000;
+	}
+	else 
+	{
+		uiD=uiD*90/100;
+	}
+
+	return uiD;
+}<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n284">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="33.59940372035112" width="221.79950689925454" x="-907.5335718425948" y="4135.684328882779"/>
+          <y:Fill color="#FFCC99" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="213.78125" x="4.009128449627269" xml:space="preserve" y="4.998920610175446">ADC电压值转换为实际温度值<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n285">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="14.769421579450977" width="282.7789780890513" x="-448.31497024106045" y="4091.3572488414566"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="269.85546875" x="6.4617546695256465" xml:space="preserve" y="0.4843201647254318">#define  SYS_TEMPEXT_MAX     3 //TS1,TS2,TS3最多支持3个温度传感器<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n286">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="16.849490726026602" width="111.29244412475146" x="-100.51383776007788" y="4152.479670514347"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.890625" x="1.2009095623757275" xml:space="preserve" y="1.524354738013244">ADC电压值转换为实际温度值<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n287">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="23.20525756278596" width="114.18142905055089" x="-60.96193016266952" y="4203.201846817867"/>
+          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="8" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="13.80078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.796875" x="2.1922770252754447" xml:space="preserve" y="4.702238156392923">电流值，高8位低8位拼成16位<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -4065,13 +5293,13 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="-120.22231314803503" y="945.1506175897323"/>
+            <y:Point x="-120.22231314803503" y="944.9984767845983"/>
             <y:Point x="-120.22231314803503" y="1055.2457996760716"/>
             <y:Point x="-435.1637193980348" y="1055.2457996760716"/>
             <y:Point x="-435.1637193980348" y="1707.1012684260713"/>
             <y:Point x="-712.276673965575" y="1707.1012684260713"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4083,7 +5311,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
             <y:Point x="-1264.6457583622996" y="2221.5744999999997"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4099,7 +5327,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="-372.7660416477902" y="1707.1012684260713"/>
             <y:Point x="-326.5061651620997" y="1707.1012684260713"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4111,7 +5339,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
             <y:Point x="-39.204602662099944" y="1837.8463749999996"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4121,7 +5349,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="6.138168664709951" y="1006.1475711589289"/>
+            <y:Point x="6.138168664709951" y="1006.4668863691967"/>
             <y:Point x="6.138168664709951" y="1696.9258693757806"/>
             <y:Point x="530.9648571758005" y="1696.9258693757806"/>
           </y:Path>
@@ -4140,8 +5368,8 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="49.92113371646815" y="1642.6375669470694"/>
             <y:Point x="49.92113371646815" y="1035.1062399178577"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
+          <y:LineStyle color="#FF00FF" type="line" width="3.0"/>
+          <y:Arrows source="standard" target="none"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -4182,7 +5410,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="530.9648571758005" y="3301.7436133773244"/>
             <y:Point x="-39.2046026621" y="3301.7436133773244"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#FF00FF" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4308,7 +5536,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="-504.6468883138374" y="2043.4261533408012"/>
+            <y:Point x="-504.6468883138374" y="2033.5516931451973"/>
             <y:Point x="-504.6468883138374" y="2731.8988283395547"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
@@ -4334,9 +5562,9 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="-1979.133978598069" y="2864.058706354438"/>
+            <y:Point x="-1979.133978598069" y="2873.0867842475614"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4359,7 +5587,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="-2747.3298991159045" y="2703.341516435988"/>
             <y:Point x="-2747.3298991159045" y="2991.46752180258"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4372,7 +5600,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="-2747.3298991159045" y="2658.972803459372"/>
             <y:Point x="-2747.3298991159045" y="2559.385196794392"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4385,7 +5613,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="-2698.499877740908" y="2614.6040904827555"/>
             <y:Point x="-2698.499877740908" y="2173.0733303282905"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4398,7 +5626,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="-2653.176566728466" y="2570.2353775061392"/>
             <y:Point x="-2653.176566728466" y="1880.8076212729816"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4410,7 +5638,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
             <y:Point x="-3862.4639454899393" y="1880.8076212729816"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="2.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4422,7 +5650,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
           <y:Path sx="0.0" sy="0.0" tx="141.08915960334434" ty="-135.41427523090806">
             <y:Point x="-3721.374785886595" y="2173.0733303282905"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="2.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4432,7 +5660,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="81.70051865098048"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#993366" type="line" width="2.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4442,7 +5670,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-63.343756549019645" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="2.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4455,7 +5683,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="940.9735017294563" y="4017.487574944638"/>
             <y:Point x="1566.5361585359826" y="4017.487574944638"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="2.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4472,7 +5700,7 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
             <y:Point x="514.1803417275951" y="3366.0127069243626"/>
             <y:Point x="769.878368922797" y="3366.0127069243626"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -4494,7 +5722,6 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       </data>
     </edge>
     <edge id="e58" source="n179" target="n175">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -4508,10 +5735,76 @@ gBMSConfig.Type.CapaRate=200;      //2.00AH安时<y:LabelModel><y:SmartNodeLabel
       </data>
     </edge>
     <edge id="e59" source="n44" target="n183">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="392.6150963483408" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e60" source="n271" target="n272">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#FF0000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e61" source="n267" target="n276">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="557.8445468548517" y="3804.00829431926"/>
+            <y:Point x="557.8445468548517" y="4906.162232435356"/>
+            <y:Point x="5452.150251881219" y="4906.162232435356"/>
+            <y:Point x="5452.150251881219" y="842.6237783204483"/>
+          </y:Path>
+          <y:LineStyle color="#FF00FF" type="line" width="2.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e62" source="n275" target="n71">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="38.90146269042407"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e63" source="n275" target="n276">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="197.83230293788029" ty="-0.03525393058521331">
+            <y:Point x="557.8445468548517" y="4012.9997978232027"/>
+            <y:Point x="557.8445468548517" y="4906.598158705371"/>
+            <y:Point x="5452.257696957087" y="4906.598158705371"/>
+            <y:Point x="5452.257696957087" y="842.5885243898631"/>
+          </y:Path>
+          <y:LineStyle color="#FF00FF" type="line" width="2.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e64" source="n282" target="n283">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="-410.4234436790575">
+            <y:Point x="-188.87844363779084" y="4189.4624501351545"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
