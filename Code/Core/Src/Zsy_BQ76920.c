@@ -273,7 +273,7 @@ Zsy_BQ76920_SingleByte_Read (uint8_t rdRegister)
 }
 //begin to initial variables.
 int
-beginInit (void)
+BQ76920_init (void)
 {
   int8_t adcGain1, adcGain2;
   uint8_t i;
@@ -311,6 +311,80 @@ beginInit (void)
   //store in global variable for later use.
   gBQ76920Dev.adcGain = 365 + (int8_t) (adcGain1 | adcGain2);
 
+  //https://github.com/LLL2542/BQ76920/blob/main/BQ76920.c
+  //Set Protect1 register.
+  //[7]:RSNS, 1 = OCD and SCD thresholds at upper input range.
+  //[4:3]: SCD_D1, SCD_D0: Short circuit in discharge delay setting.
+  //0x0=70us, 0x1=100us, 0x2=200us, 0x3=400us.
+  //[2:0]: SCD_T2, SCD_T1, SCD_T0: Short circuit in discharge threshold setting.
+  //0x0, 44mV (RSNS=1), 22mV (RSNS=0)
+  //0x1, 67mV (RSNS=1), 33mV (RSNS=0)
+  //0x2, 89mV (RSNS=1), 44mV (RSNS=0)
+  //0x3, 111mV (RSNS=1), 56mV (RSNS=0)
+  //0x4, 133mV (RSNS=1), 67mV (RSNS=0)
+  //0x5, 155mV (RSNS=1), 78mV (RSNS=0)
+  //0x6, 178mV (RSNS=1), 89mV (RSNS=0)
+  //0x7, 200mV (RSNS=1), 100mV (RSNS=0)
+
+  //Since maximum current of payload is 100A, so short-circuit current we choose 110A.
+  //we use a 1.5mR shunt, so V=I*R=110A*1.5mR=165mV.
+  //(0x1<<7): RSNS=1
+  //(0x1<<3): 100us
+  //(0x5<<0): 155mV
+  Zsy_BQ76920_SingleByte_Write (PROTECT1, (0x1 << 7) | (0x1 << 3) | (0x5 << 0));
+
+  //Set Protect2 register.
+  //[6:4], OCD_D2, OCD_D1, OCD_D0: Overcurrent in discharge delay setting.
+  //0x0=8ms
+  //0x1=20ms
+  //0x2=40ms
+  //0x3=80ms
+  //0x4=160ms
+  //0x5=320ms
+  //0x6=640ms
+  //0x7=1280ms
+
+  //[3:0], OCD_T3, OCD_T2, OCD_T1, OCD_T0: Overcurrent in discharge threshold setting.
+  //0x0, 17mV(RSNS=1), 8mV(RSNS=0)
+  //0x1, 22mV(RSNS=1), 11mV(RSNS=0)
+  //0x2, 28mV(RSNS=1), 14mV(RSNS=0)
+  //0x3, 33mV(RSNS=1), 17mV(RSNS=0)
+  //0x4, 39mV(RSNS=1), 19mV(RSNS=0)
+  //0x5, 44mV(RSNS=1), 22mV(RSNS=0)
+  //0x6, 50mV(RSNS=1), 25mV(RSNS=0)
+  //0x7, 56mV(RSNS=1), 28mV(RSNS=0)
+  //0x8, 61mV(RSNS=1), 31mV(RSNS=0)
+  //0x9, 67mV(RSNS=1), 33mV(RSNS=0)
+  //0xA, 72mV(RSNS=1), 36mV(RSNS=0)
+  //0xB, 78mV(RSNS=1), 39mV(RSNS=0)
+  //0xC, 83mV(RSNS=1), 42mV(RSNS=0)
+  //0xD, 89mV(RSNS=1), 44mV(RSNS=0)
+  //0xE, 94mV(RSNS=1), 47mV(RSNS=0)
+  //0xF, 100mV(RSNS=1), 50mV(RSNS=0)
+
+  //(0xF<<0): 100mV,  100mV/1.5mR=66.67A
+  //The shunt should be changed to 1mR, then 100mV/1mR=100A
+  Zsy_BQ76920_SingleByte_Write (PROTECT2, (0x4 << 4) | (0xF << 0));
+
+  //Set Protect3 register.
+  //[7:6], UV_D1, UV_D0: Undervoltage delay setting.
+  //0x0=1s
+  //0x1=4s
+  //0x2=8s
+  //0x3=16s
+  //[5:4], OV_D1, OV_D0: Overvoltage delay setting.
+  //0x0=1s
+  //0x1=2s
+  //0x2=4s
+  //0x3=8s
+  Zsy_BQ76920_SingleByte_Write (PROTECT3, (0x1 << 6) | (0x2 << 4));
+
+  //https://github.com/LLL2542/BQ76920/blob/main/BQ76920.c
+  //Set OV_TRIP OverVoltage.
+  Zsy_BQ76920_SingleByte_Write (OV_TRIP, 0xF9); //4.3V depend on ADC.
+
+  //Set UV_TRIP UnderVoltage.
+  Zsy_BQ76920_SingleByte_Write (UV_TRIP, 0x91); //2.5V depend on ADC.
   return 0;
 }
 // limit settings (for battery protection)
@@ -387,6 +461,94 @@ int
 disableDischarging (void)
 {
   return 0;
+}
+//get Die Temperature.
+int
+getDieTemperature (void)
+{
+  //https://github.com/LLL2542/BQ76920/blob/main/BQ76920.c
+  uint8_t ts1_high, ts1_low;
+  uint16_t ts1_val;
+  ts1_high = Zsy_BQ76920_SingleByte_Read (TS1_HI_BYTE);
+  ts1_low = Zsy_BQ76920_SingleByte_Read (TS1_LO_BYTE);
+  ts1_val = (ts1_high << 8) | ts1_low;
+  //V25 = 1.200 V (nominal)
+  //VTSX = (ADC in Decimal) x 382 µV/LSB
+  //TEMPDIE = 25° – ((VTSX – V25) ÷ 0.0042)
+
+  //uV->mV-V, 1uV=1/1000mV=1/1000,000V
+  gBQ76920Dev.dieTemp = 25.0f - (((ts1_val * 0.000328f) - 1.20f) / 0.0042f);
+  return 0;
+}
+//Enable Balancing.
+#define	BalanceThreshold		0.05f	  //V,50mV.
+int
+enableBalancing (void)
+{
+  uint8_t i;
+  float minVoltage = 4.2f;
+  uint8_t balancingFlag = 0, balancingFlagNew = 0;
+  uint8_t adjacentCellCollision = 0;
+  //find min voltage among 4 cells.
+  for (i = 0; i < 4; i++)
+    {
+      if (gBQ76920Dev.cellVoltage[i] - minVoltage < 0)
+	{
+	  minVoltage = gBQ76920Dev.cellVoltage[i];
+	}
+    }
+  for (i = 0; i < 4; i++)
+    {
+      if ((gBQ76920Dev.cellVoltage[i] - minVoltage) >= BalanceThreshold)
+	{
+	  //try to enable balancing of current cell.
+	  balancingFlagNew = balancingFlag | (0x1 << i);
+
+	  //check if attempting to balance adjacent cells.
+
+	  //cell[0], if true, balancingFlag=0x0, balancingFlagNew=0|(0x1<<0)=0x1, then
+	  //((balancingFlagNew << 1) & balancingFlag)=0,
+	  //((balancingFlag << 1) & balancingFlagNew)=0,
+	  //adjacentCellCollision=0, so balancingFlag=balancingFlagNew=0x1.
+
+	  //cell[1], if true, balancingFlag=0x1, balancingFlagNew=0x1|(0x1<<1)=B11, then
+	  //((balancingFlagNew << 1) & balancingFlag)=110&1=110,
+	  //((balancingFlag << 1) & balancingFlagNew)=10&11=10.
+	  //adjacentCellCollision!=0, so balancingFlag keep original value 0x1.
+
+	  //cell[2], if true, balancingFlag=0x1, balancingFlagNew=0x1|(0x1<<2)=B101, then
+	  //((balancingFlagNew << 1) & balancingFlag)=1010&1=0,
+	  //((balancingFlag << 1) & balancingFlagNew)=10&101=0.
+	  //adjacentCellCollision=0, so balancingFlag=balancingFlagNew=B101.
+
+	  //cell[3], if true, balancingFlag=B101, balancingFlagNew=B101|(0x1<<3)=B1101, then
+	  //((balancingFlagNew << 1) & balancingFlag)=B11010&B101=B11000,
+	  //((balancingFlag << 1) & balancingFlagNew)=B1010&B1101=B1000.
+	  //adjacentCellCollision!=0, so balancingFlag keep original value B101.
+
+	  //Since balancingFlag=B101, so only [0] and [2] Cells will be balanced.
+
+	  //adjacentCellCollision=0, so balancingFlag=balancingFlagNew=B101.
+	  adjacentCellCollision = ((balancingFlagNew << 1) & balancingFlag) || ((balancingFlag << 1) & balancingFlagNew);
+	  if (!adjacentCellCollision)
+	    {
+	      balancingFlag = balancingFlagNew;
+	    }
+	}
+    }
+  //CELLBAL1, CB[5:1].
+  //VC1: Controlled by CB1.
+  //VC2: Controlled by CB2.
+  //VC3: Controlled by CB3.
+  //VC4: Controlled by CB4.
+  //VC5: Controlled by CB5.
+  Zsy_BQ76920_SingleByte_Write (CELLBAL1, balancingFlag);
+  return 0;
+}
+void
+disableBalancing (void)
+{
+  Zsy_BQ76920_SingleByte_Write (CELLBAL1, 0x0);
 }
 //Enter SHIP mode.
 int
@@ -535,17 +697,17 @@ updateCurrent (int8_t bIgnoreCCReadyFlag)
       cc_low = Zsy_BQ76920_SingleByte_Read (CC_LO_BYTE);
       cc_val = (cc_high << 8) | cc_low;
       //convert negative to positive.
-      if(cc_val>((0x1<<15)-1))
+      if (cc_val > ((0x1 << 15) - 1))
 	{
-	    cc_val=-((~cc_val)+1);
+	  cc_val = -((~cc_val) + 1);
 	}
       //uV->mV->V, 1uV=1/1000mV=1/1000,000V.
-      Vs=cc_val*8.44/1000000.0f; //unit is V.
+      Vs = cc_val * 8.44 / 1000000.0f; //unit is V.
 
       //V->mV,1V=1000mV
       //Rsense=5mR
       //mV/mR=A.
-      gBQ76920Dev.batCurrent = Vs*1000.0f/(RSENSE);
+      gBQ76920Dev.batCurrent = Vs * 1000.0f / (RSENSE);
 
       //write 1 to clear CC_READY flag.
       Zsy_BQ76920_SingleByte_Write (SYS_STAT, (0x1 << 7));
@@ -554,15 +716,15 @@ updateCurrent (int8_t bIgnoreCCReadyFlag)
 }
 //update voltage.
 int
-updateVoltages(void)
+updateVoltages (void)
 {
   //https://github.com/LLL2542/BQ76920/blob/main/BQ76920.c
-  uint8_t val_high,val_low;
+  uint8_t val_high, val_low;
   uint16_t val_data;
   //read BAT_HI & BAT_LI.
-  val_high = Zsy_BQ76920_SingleByte_Read (BAT_HI_BYTE) ;
+  val_high = Zsy_BQ76920_SingleByte_Read (BAT_HI_BYTE);
   val_low = Zsy_BQ76920_SingleByte_Read (BAT_LO_BYTE);
-  val_data=(val_high<<8)|val_low;
+  val_data = (val_high << 8) | val_low;
   //According to data sheet, the equation as below.
   // #Cells represents how many cells we have in connection, here is 4.
   //V(BAT) = 4 x GAIN x ADC(cell) + (#Cells x OFFSET)
@@ -570,43 +732,42 @@ updateVoltages(void)
   //uV->mV->V,1uV=1/1000mV=1/1000,000V.
   //mV->V, 1mV=1/1000V.
   //store in global variable for later use.
-  gBQ76920Dev.batVoltage=(float)( 4*(gBQ76920Dev.adcGain/1000000.0f)*val_data) + (4*(gBQ76920Dev.adcOffset)/1000.0f);
-
+  gBQ76920Dev.batVoltage = (float) (4 * (gBQ76920Dev.adcGain / 1000000.0f) * val_data) + (4 * (gBQ76920Dev.adcOffset) / 1000.0f);
 
   //get Cells Voltages: VC1_HI & VC1_LO.
-  val_high = Zsy_BQ76920_SingleByte_Read (VC1_HI_BYTE) ;
+  val_high = Zsy_BQ76920_SingleByte_Read (VC1_HI_BYTE);
   val_low = Zsy_BQ76920_SingleByte_Read (VC1_LO_BYTE);
-  val_data=(val_high<<8)|val_low;
+  val_data = (val_high << 8) | val_low;
   //V(cell) = GAIN x ADC(cell) + OFFSET
   //GAIN is stored in units of µV/LSB, while OFFSET is stored in mV units.
   //uV->mV, 1uV=1/1000mV.
-  gBQ76920Dev.cellVoltage[0]=(gBQ76920Dev.adcGain*val_data)/1000.0f+gBQ76920Dev.adcOffset;
+  gBQ76920Dev.cellVoltage[0] = (gBQ76920Dev.adcGain * val_data) / 1000.0f + gBQ76920Dev.adcOffset;
 
   //get Cells Voltages: VC2_HI & VC2_LO.
-  val_high = Zsy_BQ76920_SingleByte_Read (VC2_HI_BYTE) ;
+  val_high = Zsy_BQ76920_SingleByte_Read (VC2_HI_BYTE);
   val_low = Zsy_BQ76920_SingleByte_Read (VC2_LO_BYTE);
-  val_data=(val_high<<8)|val_low;
+  val_data = (val_high << 8) | val_low;
   //V(cell) = GAIN x ADC(cell) + OFFSET
   //GAIN is stored in units of µV/LSB, while OFFSET is stored in mV units.
   //uV->mV, 1uV=1/1000mV.
-  gBQ76920Dev.cellVoltage[1]=(gBQ76920Dev.adcGain*val_data)/1000.0f+gBQ76920Dev.adcOffset;
+  gBQ76920Dev.cellVoltage[1] = (gBQ76920Dev.adcGain * val_data) / 1000.0f + gBQ76920Dev.adcOffset;
 
   //get Cells Voltages: VC3_HI & VC3_LO.
-  val_high = Zsy_BQ76920_SingleByte_Read (VC3_HI_BYTE) ;
+  val_high = Zsy_BQ76920_SingleByte_Read (VC3_HI_BYTE);
   val_low = Zsy_BQ76920_SingleByte_Read (VC3_LO_BYTE);
-  val_data=(val_high<<8)|val_low;
+  val_data = (val_high << 8) | val_low;
   //V(cell) = GAIN x ADC(cell) + OFFSET
   //GAIN is stored in units of µV/LSB, while OFFSET is stored in mV units.
   //uV->mV, 1uV=1/1000mV.
-  gBQ76920Dev.cellVoltage[2]=(gBQ76920Dev.adcGain*val_data)/1000.0f+gBQ76920Dev.adcOffset;
+  gBQ76920Dev.cellVoltage[2] = (gBQ76920Dev.adcGain * val_data) / 1000.0f + gBQ76920Dev.adcOffset;
 
   //get Cells Voltages: VC4_HI & VC4_LO.
-  val_high = Zsy_BQ76920_SingleByte_Read (VC4_HI_BYTE) ;
+  val_high = Zsy_BQ76920_SingleByte_Read (VC4_HI_BYTE);
   val_low = Zsy_BQ76920_SingleByte_Read (VC4_LO_BYTE);
-  val_data=(val_high<<8)|val_low;
+  val_data = (val_high << 8) | val_low;
   //V(cell) = GAIN x ADC(cell) + OFFSET
   //GAIN is stored in units of µV/LSB, while OFFSET is stored in mV units.
   //uV->mV, 1uV=1/1000mV.
-  gBQ76920Dev.cellVoltage[3]=(gBQ76920Dev.adcGain*val_data)/1000.0f+gBQ76920Dev.adcOffset;
+  gBQ76920Dev.cellVoltage[3] = (gBQ76920Dev.adcGain * val_data) / 1000.0f + gBQ76920Dev.adcOffset;
   return 0;
 }

@@ -26,6 +26,7 @@
 #include "Zsy_FlashOP.h"
 #include "Zsy_Registers.h"
 #include "Zsy_Utils.h"
+#include "Zsy_BQ76920.h"
 #define BMS_I2C_ADDRESS 0x18
 /* USER CODE END Includes */
 
@@ -90,11 +91,11 @@ MX_SPI1_Init (void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-//68.9Ah = 68.9A*1h=68.9A*3600s
-float gTotalCapacity=68.9*3600;
+//68.9Ah = 68.9A*1h=68.9A*3600s=68.9A*3600*1000ms
+#define TOTAL_CAPACITY	(68.9*3600*1000)
 
 uint32_t gFlashData[2];
-//[0]:SoC, 0%~1000%.  99.9%=999.
+//[0]:SoC, 0%~100.0%.  99.9%=999.
 //[1]:Q, in unit of AMP_second.
 /* USER CODE END 0 */
 
@@ -137,18 +138,29 @@ main (void)
   MX_SPI1_Init ();
   /* USER CODE BEGIN 2 */
 
+  BQ76920_init ();
+  enableCharging ();
+  enableDischarging ();
+  enableBalancing ();
+
   // read stored data from Embedded Flash.
   //read 2*sizeof(int) data.
-  if (!ZsyFlashRead ((unsigned int*)gFlashData, 2))
+  if (!ZsyFlashRead ((unsigned int*) gFlashData, 2))
     {
       if (gFlashData[0] == 0 || gFlashData[1] == 0)
 	{
 	  //first time after Programming.
+	  //read registers to calculate Pack Voltage.
+	  updateVoltages ();
 	  //use Open-Circuit-Voltage to initial SoC.
-	  //Read BAT_HI & BAT_LO register.
-	  uint8_t bat_vol[2];
-	  HAL_I2C_Mem_Read(&hi2c1,BMS_I2C_ADDRESS,BAT_HI_BYTE,2,bat_vol,2,300);
-
+	  gBQ76920Dev.iSoC = Zsy_MapVol2SoC (gBQ76920Dev.batVoltage);
+	  gBQ76920Dev.iAMPSec = gBQ76920Dev.iSoC/1000.0f*TOTAL_CAPACITY;
+	}
+      else
+	{
+	  //Read back previous stored value.
+	  gBQ76920Dev.iSoC = gFlashData[0];
+	  gBQ76920Dev.iAMPSec = gFlashData[1];
 	}
     }
 
@@ -158,6 +170,11 @@ main (void)
   /* USER CODE BEGIN WHILE */
   while (1)
     {
+      getDieTemperature ();
+      dumpRegisters ();
+      checkStatus ();
+      updateVoltages ();
+      updateCurrent (1);
       /* USER CODE END WHILE */
 
       /* USER CODE BEGIN 3 */

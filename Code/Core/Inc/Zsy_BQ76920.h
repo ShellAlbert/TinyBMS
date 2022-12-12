@@ -14,20 +14,27 @@
 
 typedef struct
 {
-  int cellVoltage[4]; 	// 4 cells voltage.
+  float cellVoltage[4]; // Cells voltage in mV unit.
   int adcGain; 		// ADCGain in uV/LSB unit.
   int adcOffset; 	// ADCOFFSET in mV unit.
 
   float batVoltage;   // The total voltage of battery pack in mV unit.
   float batCurrent; // The current of battery pack in mA unit.
 
-  float cellVoltage[4]; // Cells voltage in mV unit.
+  float dieTemp; // die Temperature.
+
+  //State of Charge.
+  //range:0~1000, means 0%~100.0%
+  uint32_t iSoC;
+
+  //Coulomb Counter, accumulated AMP Second.
+  uint32_t iAMPSec;
 } BQ76920_DEV;
 extern BQ76920_DEV gBQ76920Dev;
 
 //begin to initial variables.
 extern int
-beginInit (void);
+BQ76920_init (void);
 
 // limit settings (for battery protection)
 // minimum temperature degree Celsius at Discharge.
@@ -66,6 +73,16 @@ enableDischarging (void);
 extern int
 disableDischarging (void);
 
+//Enable Balancing.
+extern int
+enableBalancing(void);
+extern void
+disableBalancing(void);
+
+//get Die Temperature.
+extern int
+getDieTemperature(void);
+
 //Enter SHIP mode.
 extern int
 enterSHIPMode (void);
@@ -87,4 +104,6 @@ updateCurrent(int8_t bIgnoreCCReadyFlag);
 //update voltage.
 extern int
 updateVoltages(void);
+
+
 #endif /* INC_ZSY_BQ76920_H_ */
