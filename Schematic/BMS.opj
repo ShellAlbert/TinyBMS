@@ -108,8 +108,18 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 547"))
-      (Tab 0)))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 924"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 26 5 1502 26 967")
+        (Scroll "1369 0")
+        (Zoom "172")
+        (Occurrence "/"))
+      (Path "D:\WORK\GITHUB\TINYBMS\SCHEMATIC\BMS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (PartMRUSelector
     (GND
       (LibraryName

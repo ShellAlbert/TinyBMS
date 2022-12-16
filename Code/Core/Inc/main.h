@@ -59,14 +59,28 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SELA_Pin GPIO_PIN_1
-#define SELA_GPIO_Port GPIOB
-#define SELB_Pin GPIO_PIN_2
-#define SELB_GPIO_Port GPIOB
-#define CTL1_Pin GPIO_PIN_10
-#define CTL1_GPIO_Port GPIOB
-#define CTL2_Pin GPIO_PIN_11
+#define CTL2_Pin GPIO_PIN_1
 #define CTL2_GPIO_Port GPIOB
+#define CTL1_Pin GPIO_PIN_2
+#define CTL1_GPIO_Port GPIOB
+#define REL_Pin GPIO_PIN_10
+#define REL_GPIO_Port GPIOB
+#define SELA_Pin GPIO_PIN_11
+#define SELA_GPIO_Port GPIOB
+#define SELB_Pin GPIO_PIN_12
+#define SELB_GPIO_Port GPIOB
+#define LED0_Pin GPIO_PIN_11
+#define LED0_GPIO_Port GPIOA
+#define LED1_Pin GPIO_PIN_12
+#define LED1_GPIO_Port GPIOA
+#define BMS_ALERT_Pin GPIO_PIN_15
+#define BMS_ALERT_GPIO_Port GPIOA
+#define MCU_HOLD_Pin GPIO_PIN_3
+#define MCU_HOLD_GPIO_Port GPIOB
+#define BMS_ON_Pin GPIO_PIN_4
+#define BMS_ON_GPIO_Port GPIOB
+#define MCU_EN_Pin GPIO_PIN_5
+#define MCU_EN_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
